@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="margin: 2% 0 0 0; overflow: auto; width: 100%;">
+    <div class="row" style="height: 80vh;">
+        <div class="col-xs-4 text-center" style="border-style: double; height: 100%">
+            <h1>{{ title }}</h1>
+            <br><br><br>
+            descripcion :
+            <div class="row text-left">
+                <br>
+                <i>{{ description }}</i>
+            </div>
+        </div>
+        <div class="col-xs-offset-1 col-xs-7" style="border-style: double; height: 100%; overflow: auto;">
+            {% for img in images %}
+            <div class="col-xs-4" style="padding: 5px 5px 5px 5px; height: 180px;">
+                <div style="border: solid; height: 170px;"><img style="width: 100%; height: 100%;" src={{ img.img.url }} /></div>
+            </div>
+            {% endfor %}
+        </div>
+{% endblock %}

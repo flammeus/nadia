@@ -1,0 +1,28 @@
+.navbar {
+    background-color: Teal;
+}
+
+.nav.navbar-nav li a {
+    color: black;
+}
+
+.nav.navbar-nav li, .nav.navbar-nav.navbar-right {
+    color: black;
+    height: 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.divider-vertical {
+    display: inline-block;
+    height: 36px;
+    margin: 7px 10px 7px 10px;
+    border-right: 1px solid #000000;
+}
+
+.logo {
+    width: 49px;
+    margin: 7px 0 7px 0;
+    background: url(/static/img/logo.png) no-repeat center center fixed; 
+}
